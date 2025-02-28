@@ -16,7 +16,7 @@ body {
     align-items: center;
     width: 80%;
     max-width: 1100px;
-    background: #ffdbb8;
+    background: #F8F5F2;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +98,7 @@ button:hover {
 
 .circle {
     position: absolute;
-    background: #ffa041;
+    background: #feb164;
     border-radius: 50%;
     animation: move 3s infinite alternate ease-in-out, fade 5s infinite alternate ease-in-out;
 }
