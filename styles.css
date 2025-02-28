@@ -16,7 +16,7 @@ body {
     align-items: center;
     width: 80%;
     max-width: 1100px;
-    background: #F8F5F2;
+    background: #ffdbb8;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +98,7 @@ button:hover {
 
 .circle {
     position: absolute;
-    background: rgba(11, 94, 215, 0.2);
+    background: #ffa041;
     border-radius: 50%;
     animation: move 3s infinite alternate ease-in-out, fade 5s infinite alternate ease-in-out;
 }
@@ -115,7 +115,7 @@ button:hover {
     width: 180px;
     height: 180px;
     top: 60%;
-    left: 70%;
+    left: 80%;
     animation-delay: 2s;
 }
 
@@ -123,7 +123,7 @@ button:hover {
     width: 150px;
     height: 150px;
     top: 30%;
-    left: 45%;
+    left: 50%;
     animation-delay: 1s;
 }
 
@@ -227,5 +227,57 @@ button:hover {
     .rotating-square {
         width: 140px;
         height: 140px;
+    }
+}
+
+.heading-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#heading-bg-image {
+    position: absolute;
+    left: -40px;
+    top: -5%;
+    transform: translateY(-50%);
+    width: 60px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-image {
+    width: 50px;
+    transition: transform 1s ease-in-out;
+    animation: shrinkExpand 3s infinite;
+}
+
+@keyframes shrinkExpand {
+
+    0%,
+    70% {
+        transform: scale(1);
+    }
+
+    71% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes waveMove {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 100%;
     }
 }
